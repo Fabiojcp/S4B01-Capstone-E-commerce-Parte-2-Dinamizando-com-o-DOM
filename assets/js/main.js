@@ -67,7 +67,7 @@ let dataProdutos = [
         custo: 299,
         quantidade: 1,
         id: 'tag_acessorio3',
-        busca: ['Colar de ouro','ouro','banhado','18','ostentação','Acessórios','colar','corrente']
+        busca: ['Colar de ouro','ouro','banhado','18','ostentação','Acessórios','colar','corrente','balada']
     },
     {
         img: './assets/imgs/Men-tenis-adidas-black.png',

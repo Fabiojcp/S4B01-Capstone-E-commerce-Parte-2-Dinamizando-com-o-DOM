@@ -1,1 +1,1 @@
-# S4B01-Capstone-E-commerce-Parte-2-Dinamizando-com-o-DOM
+🏆 Capstone: E-commerce - Parte 2 - 👨🏿‍💻 Dinamizando com o DOM 🐣

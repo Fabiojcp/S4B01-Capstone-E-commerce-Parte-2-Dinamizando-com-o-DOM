@@ -1,0 +1,95 @@
+/*#tag_acessorio {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 370px;
+    margin: 22.5px;    
+    background-color: #F5F5F5;
+    transition: 1s transform;
+    border: 2px solid #F5F5F5;
+}
+
+#tag_acessorio:hover {
+    border: 2px solid #2E245E;
+    transform: scale(1.2);
+    transition-delay:0.5s;
+    transform-origin: top(5%);
+    z-index: 2;
+}
+
+#tag_calcado {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 370px;
+    margin: 22.5px;    
+    background-color: #F5F5F5;
+    transition: 1s transform;
+    border: 2px solid #F5F5F5;
+}
+
+#tag_calcado:hover {
+    border: 2px solid #2E245E;
+    transform: scale(1.2);
+    transition-delay:0.5s;
+    transform-origin: top(5%);
+    z-index: 2;
+}
+
+#tag_camiseta {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 370px;
+    margin: 22.5px;    
+    background-color: #F5F5F5;
+    transition: 1s transform;
+    border: 2px solid #F5F5F5;
+}
+
+#tag_camiseta:hover {
+    border: 2px solid #2E245E;
+    transform: scale(1.2);
+    transition-delay:0.5s;
+    transform-origin: top(5%);
+    z-index: 2;
+}
+
+#tag_jaqueta {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 370px;
+    margin: 22.5px;    
+    background-color: #F5F5F5;
+    transition: 1s transform;
+    border: 2px solid #F5F5F5;
+}
+
+#tag_jaqueta:hover {
+    border: 2px solid #2E245E;
+    transform: scale(1.2);
+    transition-delay:0.5s;
+    transform-origin: top(5%);
+    z-index: 2;
+}
+
+.item:hover {
+    border: 2px solid #2E245E;
+    transform: scale(1.2);
+    transition-delay:0.5s;
+    transform-origin: top(5%);
+    z-index: 2;
+}*/

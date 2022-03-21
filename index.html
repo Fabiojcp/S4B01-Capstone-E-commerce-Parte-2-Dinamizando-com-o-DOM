@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weartake</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+</head>
+<body>
+
+    <header>
+
+        <div id="header_logo" class="pulse">
+            <a href="#" id="header_logo_texto" class="header_logo_texto">Weartake</a>
+        </div>
+        
+        <div id="header_botoes">
+            <button data-tag='Todos' id="header_botoes_todos" class="header_botoes">Todos</button>
+            <button data-tag='Acessórios' id="header_botoes_acessorios" class="header_botoes">Acessórios</button>
+            <button data-tag='Calçados' id="header_botoes_calcados" class="header_botoes">Calçados</button>
+            <button data-tag='Camisetas' id="header_botoes_camisetas" class="header_botoes">Camisetas</button>                
+            <button data-tag='Jaquetas' id="header_botoes_jaquetas" class="header_botoes">Jaquetas</button>
+        </div> 
+
+    </header>
+
+    <div id="corpo">
+        
+        <section id="vitrine"></section>
+
+        <div id="aba_direita">
+            
+            <div id="pesquisa">
+                <input id="pesquisa_texto" placeholder="Digite aqui sua pesquisa">
+                <button id="pesquisa_botao">Pesquisar</button>
+                <li id="autocomplete"></li>
+            </div>
+
+            
+
+            <div id="carrinho">
+                
+                <div id="carrinho_titulo">
+                    Carrinho de compras
+                </div>
+                
+                <div id="carrinho_box_vazio" class="carrinho_box_vazio_show">
+                    <p id="carrinho_box_vazio_titulo">Carrinho vázio</p>
+                    <p id="carrinho_box_vazio_texto">Adicione itens</p>
+                </div>
+
+                <div id="carrinho_box" class="carrinho_box_hide">
+                    
+                    <div id="carrinho_items">
+
+                        
+                    </div>
+
+                    <div id="carrinho_propriedades">
+                        <div id="carrinho_propriedades_quantidade">
+                            <p id="carrinho_propriedades_quantidade_quantidade">Quantidade:</p>
+                            <p id="carrinho_propriedades_quantidade_valor" class="carrinho_propriedades_quantidade_valor">1</p>
+                        </div>
+                        <div id="carrinho_propriedades_total">
+                            <p id="carrinho_propriedades_total_total">Total:</p>
+                            <p id="carrinho_propriedades_total_valor" class="carrinho_propriedades_total_valor">R$ 200,00</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./assets/js/main.js"></script>
+    <script src='./assets/js/Vitrine-Cards/CriarProdutos.js'></script>
+    <script src='./assets/js/FiltrosEPesquisa/filtroEPesquisa.js'></script>
+    <script src="./assets/js/Carrinho-Cards/CriarProdutosCarrinho.js"></script>
+    <script src="./assets/js/Funcoes-Carrinho/adicionarRemoverCarrinho.js"></script>
+    <script src="./assets/js/Funcoes-Carrinho/autocompletar.js"></script>
+</body>
+</html>

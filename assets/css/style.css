@@ -1,0 +1,631 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+body {
+    display: flex;
+    width: 1600px;
+    height: 914px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 8%;
+    background-color: #F5F5F5;
+    z-index: 2;
+}
+
+#header_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 9%;
+    margin-left: 6%;
+    font-family: Inter,sans-serif;
+    font-weight: 700;
+    font-size: 1.8vw;
+    text-align: left;
+    text-shadow: 0px 3px 2px #3333332a;
+}
+
+#header_logo_texto {
+    font-family: Inter,sans-serif;
+    font-weight: 700;
+    font-size: 1.8vw;
+    text-align: left;
+    text-shadow: 0px 3px 2px #3333332a;
+    text-decoration: none;
+    color:#333333
+}
+
+#header_botoes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    margin-right: 4%;
+}
+
+.header_botoes {
+    border: 1px solid transparent;
+    background-color: #F5F5F5;
+    font-family: Inter,sans-serif;
+    font-weight: 400;
+    font-size:1vw;
+    color: #828282;
+}
+.header_botoes:hover {
+    font-weight: 600;
+    color: #333333;
+    cursor: pointer;
+}
+
+/*
+#header_botoes_todos {
+    font-weight: 600;
+    color: #333333;
+}*/
+
+#corpo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    position: absolute;
+    margin-left: 7.2%;
+    top: 8%;
+}
+
+#vitrine {
+    width: 72%;
+    height: 100%;
+    min-width: 900px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+/*.item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 370px;
+    margin: 22.5px;    
+    background-color: #F5F5F5;
+    transition: 1s transform;
+    border: 2px solid #F5F5F5;
+}*/
+.show {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 27%;
+    min-width: 280px;
+    height: 40.5%;
+    margin: 2.5% 1.4% 2.5% 1.4%;    
+    background-color: #F5F5F5;
+    transition: 1s box-shadow;
+    border: 2px solid #F5F5F5;
+}
+.show:hover {
+    border: 2px solid #2E245E;
+    box-shadow: 0 0 1em #2E245E;
+    transition-delay:0.1s;
+    transform-origin: top(5%);
+    z-index: 2;
+}
+
+.hide {
+    display: none;
+}
+
+
+.item_imagem {
+    width: 100%; 
+    height: 155px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    transition: 1s transform;
+}
+
+.item_imagem:hover {
+    transform: scale(2);
+    z-index: 5;
+    transition-delay:0.5s;
+}
+
+.item_descrição {
+    width: 88%;
+    height: 175px;
+    padding: 20px 4% 20px 4%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.item_tags {
+    height: 26px;
+    width: 72px;       
+    background-color: #2E245E;
+    color: #ffffff;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: inter, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.item_tags:hover {
+    cursor: pointer;
+    color: #828282;
+}
+
+.item_descrição_titulo {
+    font-family: inter, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.item_descrição_descricao {
+    font-family: inter, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.item_descrição_valor {
+    font-family: inter, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #2E245E;
+}
+
+.item_descrição_botao_adicionar_carrinho {
+    font-family: inter, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #828282;
+    border: 0;
+    text-decoration: underline;
+    background-color: #ffffff;
+    padding: 0;
+}
+
+.pulse a:hover{ 
+    animation: pulse 1.2s infinite;
+    animation-timing-function: linear;   
+}
+  
+@keyframes pulse {
+    0% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(1.2)
+    } 
+    100% {
+        transform: scale(1)
+    }
+}
+
+.item_descrição_botao_adicionar_carrinho:hover {
+    color: #6B54DE;
+    cursor: pointer;
+}
+
+#men_jacket_black_lightweight_imagem{
+    background-image: url('../imgs/Men-Jacket-Front-Black.png');
+}
+
+#men_hat_black_imagem {
+    background-image: url('../imgs/Men-Hat-Black.png');
+}
+
+#surgical_mask_black_imagem {
+    background-image: url('../imgs/Surgical-Mask-Black.png');
+}
+
+#Men_tshirt_Black_Front_imagem {
+    background-image: url('../imgs/Men-TShirt-Black-Front.png');
+}
+
+#Men_TShirt_Short_White_imagem {
+    background-image: url('../imgs/Men-TShirt-Short-White.png');
+}
+
+#Men_Jacket_ChampionPackable_Black_imagem {
+    background-image: url('../imgs/Men-Jacket-ChampionPackable-Black.png');
+}
+
+#Men_Chain_Gold_imagem {
+    background-image: url('../imgs/Men-Chain-Gold.png');
+}
+
+#Men_tenis_adidas_black_imagem {
+    background-image: url('../imgs/Men-tenis-adidas-black.png');
+}
+
+#Men_tenis_hillfinger_black_imagem {
+    background-image: url('../imgs/Men-tenis-hillfinger-black.png');
+}
+
+#aba_direita {
+    width: 350px;
+    height: 550px;
+    position: fixed;
+    top: 97px;
+    right: 80px;
+}
+
+#pesquisa {
+    width: 350px;
+    height: 50px;
+    margin-bottom: 10px;
+    display: flex;
+
+}
+
+#pesquisa_texto:hover {
+    box-shadow: 0 0 10px black;
+}
+
+#pesquisa_texto {
+    width: 246px;
+    height: 50px;
+    margin: 0px;
+    margin-right: 8px;
+    border: 0;
+    padding: 0;
+    padding-left: 14px;
+    font-family: inter, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: #f5f5f5;
+}
+
+#pesquisa_botao {
+    width: 96px;
+    height: 50px;
+    background-color: #6B54DE;
+    border: 0px;
+    font-family: inter, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+}
+
+#pesquisa_botao:hover {
+    color: #cac9c9;
+    cursor: pointer;
+}
+
+#carrinho_titulo {
+    width: 350px;
+    height: 50px;
+    background-color: #6B54DE;
+    font-family: inter, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.carrinho_box_vazio_show {
+    width: 350px;
+    height: 305px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    background-color: #F5F5F5;
+}
+
+.carrinho_box_vazio_hide {
+    display: none;
+}
+
+#carrinho_box_vazio_titulo {
+    font-family: inter, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+#carrinho_box_vazio_texto {
+    font-family: inter, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #828282;
+}
+
+.carrinho_box_show {
+    width: 350px;
+    height: 460px;
+}
+
+.carrinho_box_hide {
+    display: none;
+}
+
+
+#carrinho_items {
+    width: 350px;
+    height: 336px;
+    overflow-y: scroll;
+    background-color: #f5f5f5;
+}
+
+#carrinho_items:hover {
+    overflow-y: scroll;
+}
+
+#carrinho_propriedades {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 21px 28px 17px;
+    width: 312px;
+    height: 68px;
+    background-color: #333333;
+    font-family: inter, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #ffffff;
+}
+
+#carrinho_propriedades_quantidade {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+#carrinho_propriedades_quantidade_quantidade {
+    width: 50%;
+}
+
+.carrinho_propriedades_quantidade_valor {
+    width: 50%;
+    font-weight: 400;
+    color: #828282;
+    text-align: end;
+}
+
+#carrinho_propriedades_total {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+#carrinho_propriedades_total_total {
+    width: 50%;
+}
+
+.carrinho_propriedades_total_valor {
+    width: 50%;
+    font-weight: 400;
+    color: #828282;
+    text-align: end;
+}
+
+.carrinho_items_show {
+    display: flex;
+    width: 300px;
+    height: 93px;
+    margin: 10px 0px 10px 20px;
+}
+
+.carrinho_items_hide {
+    display: none;
+}
+
+.carrinho_items_imagem {
+    height: 80px;
+    width: 80px;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.carrinho_items_descricao {
+    font-family: inter,sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+    margin-left: 17px;
+    width: 190px;
+}
+
+.carrinho_items_descricao_titulo {
+    
+}
+
+.carrinho_items_descricao_descricao {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.carrinho_items_descricao_descricao_textos_valor {
+    font-family: inter,sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #2E245E;
+}
+
+.carrinho_items_descricao_descricao_textos_botao {
+    font-family: inter,sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #828282;
+    border: 0;
+    padding: 0;
+}
+
+.carrinho_items_descricao_descricao_textos_botao:hover {
+    color: #6B54DE;
+    cursor: pointer;
+}
+
+.carrinho_items_descricao_descricao_botao_quantidade {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.carrinho_items_descricao_descricao_botao_quantidade_texto {
+    padding: 1.5px 6px 1.5px 6px;
+    border: 1px solid black;
+    font-family: inter,sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 16px;
+    color: #828282;
+}
+.carrinho_items_descricao_descricao_botao_quantidade_menos:hover {
+    background-color: #818181;
+    cursor: pointer;
+}
+#carrinho_item_tag_jaqueta1_imagem {
+    background-image: url('../imgs/Men-Jacket-Front-Black.png');
+}
+
+#carrinho_tag_acessorio1_imagem {
+    background-image: url('../imgs/Men-Hat-Black.png');
+}
+
+#carrinho_tag_acessorio2_imagem {
+    background-image: url('../imgs/Surgical-Mask-Black.png');
+}
+
+#carrinho_tag_camiseta1_imagem {
+    background-image: url('../imgs/Men-TShirt-Black-Front.png');
+}
+
+#carrinho_tag_camiseta2_imagem {
+    background-image: url('../imgs/Men-TShirt-Short-White.png');
+}
+
+#carrinho_tag_jaqueta2_imagem {
+    background-image: url('../imgs/Men-Jacket-ChampionPackable-Black.png');
+}
+
+#carrinho_tag_acessorio3_imagem {
+    background-image: url('../imgs/Men-Chain-Gold.png');
+}
+
+#carrinho_tag_calcado1_imagem {
+    background-image: url('../imgs/Men-tenis-adidas-black.png');
+}
+
+#carrinho_tag_calcado2_imagem {
+    background-image: url('../imgs/Men-tenis-hillfinger-black.png');
+}
+
+#autocomplete {
+    position: absolute;
+    width: 250px;
+    margin-top: 50px;
+    background-color: #828282;
+    list-style-type: none;
+    font-family: inter, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #d3d3d3;
+}
+
+.textos_pesquisa {
+    padding-left: 14px;
+}
+
+.textos_pesquisa:hover {
+    background-color: black;
+}
+
+@media (max-width: 800px) {
+    header {
+        justify-content: space-around;
+    }
+
+    #header_logo {
+        font-size: 2.5vw;
+    }
+
+    .header_botoes {
+        font-size: 1.2vw;
+    }
+
+}
